@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">E-Bill</string>
+    <string name="hint_et_login_email">Email</string>
+    <string name="hint_et_login_password">Password</string>
+    <string name="btn_login_text">Login</string>
+    <string name="text_tv_welcome">Welcome Back!</string>
+    <string name="tv_text_login_description">Please sign in to continue app</string>
+    <string name="et_hint_email_login">Email address</string>
+    <string name="et_hint_password_login">Password</string>
+    <string name="tv_text_forgot_login">Forgot Password?</string>
+    <string name="btn_text_login">Sign in Account</string>
+    <string name="tv_text_valid_email">Enter Valid Email</string>
+    <string name="tv_text_valid_password">Enter Password</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Search User\nComing Soon</string>
+    <string name="text_splash_tittle">E-Bill</string>
+    <string name="text_email_empty">Please enter email</string>
+    <string name="text_password_empty">Please enter password</string>
+    <string name="search_user">Search User</string>
+    <string name="tv_email_empty">Enter Email</string>
+    <string name="tv_password_empty">Enter Password</string>
+</resources>

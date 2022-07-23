@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ShowUserBillDetails">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_show_user_details"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/status_bar_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="श्रीमतीपद्माबाई बुधा टिंगुसले"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="10dp"
+        app:cardPreventCornerOverlap="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tb_show_user_details">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_total_amount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="Total Amount"
+                android:textColor="@color/gray"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@+id/tv_total_mobile_no"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_total_mobile_no"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Mobile No"
+                android:textColor="@color/gray"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/tv_total_amount"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_total_amount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Bill-Amount"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:theme="@style/EditTextTheme"
+                app:layout_constraintEnd_toStartOf="@+id/et_mobile_no"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_total_amount" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_mobile_no"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Mobile-No"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:theme="@style/EditTextTheme"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/et_total_amount"
+                app:layout_constraintTop_toBottomOf="@+id/tv_total_mobile_no" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_pending_tittle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="Pending"
+                android:textColor="@color/gray"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_total_amount" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_pending_data"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="2022-2023"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:theme="@style/EditTextTheme"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/cb_pay_all"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_pending_tittle" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/cb_pay_all"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="20dp"
+                android:buttonTint="@color/black"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:text="Pay All"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_mobile_no" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

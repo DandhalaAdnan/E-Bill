@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detail_graph"
+    app:startDestination="@id/showUserFragment">
+
+    <fragment
+        android:id="@+id/showUserFragment"
+        android:name="com.example.e_bill.fragment.ShowUserFragment"
+        android:label="fragment_show_user"
+        tools:layout="@layout/fragment_show_user" />
+</navigation>
