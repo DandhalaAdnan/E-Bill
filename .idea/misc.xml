@@ -24,6 +24,8 @@
         <entry key="..\:/Users/memon/AndroidStudioProjects/EBill/app/src/main/res/layout/fragment_show_user.xml" value="0.16197916666666667" />
         <entry key="..\:/Users/memon/AndroidStudioProjects/EBill/app/src/main/res/layout/fragment_show_user_bill_details.xml" value="0.2" />
         <entry key="..\:/Users/memon/AndroidStudioProjects/EBill/app/src/main/res/layout/show_user_data_item.xml" value="0.67" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.340625" />
+        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.16145833333333334" />
       </map>
     </option>
   </component>

@@ -46,7 +46,6 @@ class LoginFragment : Fragment() {
                 Toast.makeText(requireContext(), "Login Success", Toast.LENGTH_SHORT).show()
                 binding.etEmailLogin.text?.clear()
                 binding.etPasswordLogin.text?.clear()
-
             } else {
                 Toast.makeText(requireContext(), "Invalid Email & Password", Toast.LENGTH_SHORT)
                     .show()
